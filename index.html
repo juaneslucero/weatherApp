@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Weather App</title>
+</head>
+<body>
+
+  <h1 class="display-4 text-center bg-primary py-3 text-white">Weather App</h1>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-5 card m-3">
+        <div class="card-body">
+          <div class="form-group">
+            <label for="input">Please type the city to find its current weather</label>
+            <input class="form-control" id="input" type="text" placeholder="City...">
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-5 card m-3">
+        <div class="card-body">
+          <h5>Temperature</h5>
+          <ul class="list-group">
+            <li class="list-group-item">Average: <strong id="temp"></strong>°C</li>
+            <li class="list-group-item">High: <strong id="tempMax"></strong>°C</li>
+            <li class="list-group-item">Low: <strong id="tempMin"></strong>°C</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-5 card m-3">
+        <div class="card-body">
+          <h5>Your city</h5>
+          <ul class="list-group">
+            <li class="list-group-item">City: <strong id="city"></strong></li>
+            <li class="list-group-item">Country: <strong id="country"></strong></li>
+            <li class="list-group-item">Latitude: <strong id="lat"></strong></li>
+            <li class="list-group-item">Longitude: <strong id="long"></strong></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-12 col-lg-5 card m-3">
+        <div class="card-body">
+          <h5>Other</h5>
+          <ul class="list-group">
+            <li class="list-group-item">Pressure: <strong id="press"></strong> kPa</li>
+            <li class="list-group-item">Humidity: <strong id="hum"></strong>%</li>
+            <li class="list-group-item">Forecast: <strong id="fcast"></strong></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="key.js" charset="utf-8"></script>
+  <script src="app.js" charset="utf-8"></script>
+</body>
+</html>
